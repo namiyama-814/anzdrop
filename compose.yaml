@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8787:8787"
+      - "3000:3000"
+    tty: true
+    stdin_open: true
