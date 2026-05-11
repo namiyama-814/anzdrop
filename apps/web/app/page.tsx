@@ -2,19 +2,12 @@ export const runtime = "edge";
 
 export default function Home() {
   return (
-    <main style={{ 
-      display: 'flex', 
-      flexDirection: 'column', 
-      alignItems: 'center', 
-      justifyContent: 'center', 
-      height: '100vh',
-      fontFamily: 'sans-serif' 
-    }}>
-      <h1>ANZDROP へようこそ</h1>
-      <p>Next.js + Cloudflare Pages で爆速デプロイ成功！</p>
-      <div style={{ marginTop: '20px', padding: '10px', background: '#f0f0f0', borderRadius: '5px' }}>
-        現在、このページは <strong>Edge Runtime</strong> で動作しています。
-      </div>
+    <main style={{ padding: '50px', textAlign: 'center', fontFamily: 'sans-serif' }}>
+      <h1 style={{ color: '#0070f3' }}>ANZDROP 稼働中！</h1>
+      <p>GitHub連携による自動デプロイに成功しました。</p>
+      <p style={{ fontSize: '0.8rem', color: '#666' }}>
+        最終更新: {new Date().toLocaleString('ja-JP')}
+      </p>
     </main>
   );
 }
