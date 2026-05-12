@@ -6,5 +6,7 @@ services:
     ports:
       - "8787:8787"
       - "3000:3000"
+      - "8788:8788"
+      - "8976:8976"
     tty: true
     stdin_open: true
