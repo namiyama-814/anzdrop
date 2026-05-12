@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>API Response:</h1>
+      <h1>APIレスポンス:</h1>
       <p>{message || 'Loading...'}</p>
     </div>
   )
