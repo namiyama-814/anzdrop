@@ -1,9 +1,9 @@
 import { Hono } from 'hono'
 
 const app = new Hono()
+  .get('/hello', (c:any) => {
+    return c.json({ message: 'Hello AnzdropAPI!' });
+  })
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
-
+export type AppType = typeof app
 export default app
