@@ -8,8 +8,11 @@ app.use('*', cors({
   allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 }))
 
-app.get('/api/hello', (c) => {
+// ★ ここ！app.get の結果を route に代入する
+const route = app.get('/api/hello', (c) => {
   return c.json({ message: 'Hello from Hono!' })
 })
 
+// これで typeof route が正しく機能します
+export type AppType = typeof route
 export default app
